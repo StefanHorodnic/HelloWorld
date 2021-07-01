@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Main {
 
     private static Customer customer = new Customer();
-    private static ArrayList<IShopItem> shoppingCart = new ArrayList<>();
+    private static ArrayList<ShopItem> shoppingCart = new ArrayList<>();
 
     public static void main(String[ ] args) {
         createFakeCustomer();
@@ -34,7 +34,7 @@ public class Main {
     }
 
     public static void sendItems(){
-        for (IShopItem item : shoppingCart) {
+        for (ShopItem item : shoppingCart) {
             item.sendTo(customer);
         }
     }

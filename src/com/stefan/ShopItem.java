@@ -2,7 +2,7 @@ package com.stefan;
 
 import java.util.ArrayList;
 
-public interface IShopItem {
+public interface ShopItem {
 
     String getName();
     void setName(String name);
@@ -10,7 +10,7 @@ public interface IShopItem {
     double getPrice();
     void setPrice(double price);
 
-    void addToCart(ArrayList<IShopItem> shoppingCart);
+    void addToCart(ArrayList<ShopItem> shoppingCart);
 
     void sendTo(Customer customer);
 

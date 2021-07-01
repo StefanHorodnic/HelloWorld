@@ -2,7 +2,7 @@ package com.stefan;
 
 import java.util.ArrayList;
 
-public class Movie implements IShopItem {
+public class Movie implements ShopItem {
 
     private String name;
     private double price;
@@ -28,7 +28,7 @@ public class Movie implements IShopItem {
     }
 
     @Override
-    public void addToCart(ArrayList<IShopItem> shoppingCart) {
+    public void addToCart(ArrayList<ShopItem> shoppingCart) {
 
         System.out.println("The movie: "+name+" was added to the cart. The value is " + price);
         shoppingCart.add(this);
